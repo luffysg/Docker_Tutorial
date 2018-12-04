@@ -1,0 +1,8 @@
+Before use docker build to build an docker image, use docker login to enter credentials
+Step 14/16 : ADD run_jupyter.sh /ds/run_jupyter.sh
+
+#always encounter below error
+ADD failed: stat /var/lib/docker/tmp/docker-builder110749320/run_jupyter.sh: no such file or directory
+
+#solution:
+create a folder named ds in the working directory, for example the current working directory is set as basic_tutorial,create a folder named ds inside basic_tutorial 
